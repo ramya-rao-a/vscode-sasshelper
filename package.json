@@ -2,7 +2,7 @@
     "name": "sass-helper",
     "displayName": "Sass Helper",
     "description": "Convert css to scss by extracting mixins and nesting rules and properties",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "ramyaraoa",
     "icon": "images/sass-helper-logo.png",
     "repository": {

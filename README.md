@@ -36,7 +36,7 @@ Few features of this extension use the `sass-convert` command-line tool which ca
 
 ## Release Notes
 
-### 1.0.0
+### 0.0.2
 
 Initial release of the *Sass Helper*
 
