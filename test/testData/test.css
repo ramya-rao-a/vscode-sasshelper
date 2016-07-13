@@ -1,0 +1,23 @@
+.cat .got {
+    background-color:red;
+    float: left;    
+    margin-top: 6px;
+    margin-left: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;     
+}
+
+.cat .got .my {
+     color: #010101;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+}
+
+.cat .got .my .tongue {
+    margin-top: 7px;
+	background: #ffffff;
+
+}
+

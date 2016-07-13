@@ -1,0 +1,93 @@
+{
+    "name": "sass-helper",
+    "displayName": "Sass Helper",
+    "description": "Convert css to scss by extracting mixins and nesting rules and properties",
+    "version": "0.0.1",
+    "publisher": "ramyaraoa",
+    "icon": "images/sass-helper-logo.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ramya-rao-a/vscode-sasshelper.git"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ramya-rao-a/vscode-sasshelper/issues"
+    },
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Productivity"
+    ],
+    "activationEvents": [
+        "onCommand:sass-helper.create-scss-file",
+        "onCommand:sass-helper.extract-mixin",
+        "onCommand:sass-helper.nest-rules",
+        "onCommand:sass-helper.nest-properties",
+        "onLanguage:scss"
+    ],
+    "main": "./out/src/extension",
+    "contributes": {
+        "commands": [{
+            "command": "sass-helper.create-scss-file",
+            "title": "Create Scss file"
+        },{
+            "command": "sass-helper.create-sass-file",
+            "title": "Create Sass file"
+        },{
+            "command": "sass-helper.extract-mixin",
+            "title": "Extract Mixin"
+        },{
+            "command": "sass-helper.nest-rules",
+            "title": "Nest Css Rules"
+        },{
+            "command": "sass-helper.nest-properties",
+            "title": "Nest Css Properties"
+        }], 
+        "menus": {
+            "explorer/context": [
+                {
+                    "when": "resourceLangId == css",
+                    "command": "sass-helper.create-scss-file"
+                },
+                {
+                    "when": "resourceLangId == css",
+                    "command": "sass-helper.create-sass-file"
+                },
+                {
+                    "when": "resourceLangId == scss",
+                    "command": "sass-helper.create-sass-file"
+                }
+            ],
+            "editor/title": [
+                {
+                    "when": "resourceLangId == css",
+                    "command": "sass-helper.create-scss-file"
+                }
+            ],
+            "editor/context": [                
+                {
+                    "when": "resourceLangId == scss",
+                    "command": "sass-helper.nest-rules"
+                },
+                {
+                    "when": "resourceLangId == scss",
+                    "command": "sass-helper.extract-mixin"
+                },
+                {
+                    "when": "resourceLangId == scss",
+                    "command": "sass-helper.nest-properties"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+        "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "typescript": "^1.8.5",
+        "vscode": "^0.11.0"
+    }
+}
