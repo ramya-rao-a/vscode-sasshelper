@@ -1,4 +1,4 @@
-# sass-helper README
+# sass-helper
 
 Convert your css to scss by extracting mixins and nesting rules and properties in scss files in Visual Studio Code using the *Sass Helper*.
 
@@ -21,6 +21,7 @@ Few features of this extension use the `sass-convert` command-line tool which ca
 
 ## Coming Soon
 
+- Create scss/sass files for all css files in a folder
 - While extracting mixin, replace all occurances of the selected css properties in the file.
 - Nest css properties with same namespace even if they are not contiguous. Example:
 ```
