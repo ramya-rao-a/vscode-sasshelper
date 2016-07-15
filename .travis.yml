@@ -1,0 +1,20 @@
+language: ruby
+
+rvm:
+  - 2.2
+  
+sudo: false
+
+os:
+  - osx
+  - linux
+
+install:
+  - npm install
+  - npm run vscode:prepublish
+  - gem install sass
+
+script:  
+  - npm test --silent
+
+  
