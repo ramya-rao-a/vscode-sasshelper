@@ -1,12 +1,11 @@
 language: ruby
 
 rvm:
-  - 2.2.4
-    
-sudo: true
+  - rbx-2
 
 os:  
   - linux
+  - osx
 
 install:
   - npm install
