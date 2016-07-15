@@ -2,12 +2,10 @@ language: ruby
 
 rvm:
   - 2.2.4
-  - jruby
-  
+    
 sudo: true
 
-os:
-  - osx
+os:  
   - linux
 
 install:
